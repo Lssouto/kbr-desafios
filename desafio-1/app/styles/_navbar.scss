@@ -1,0 +1,163 @@
+
+//Navbar
+.navbar{
+  margin:25px 0 0 0;
+  font-weight: 700;
+  padding: 0;
+  nav{
+    padding: 0;
+  }
+  li{
+    display:inline;
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 14px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  
+  }
+
+  a:link,a:visited{
+    color: $font-color;
+    
+  }
+  a:hover{
+    color: $color-alt;
+    
+  }
+
+}
+//Nav Responsive
+@media screen and(max-width: $tablet) {
+  .navbar {
+    margin: 0px;
+    a:link,a:visited{
+      padding: 20px;
+      color: #fff;
+    }
+    a:hover{
+      color: $color-alt;
+      border-radius: 8px;
+    }
+  }
+  
+  .navbar li {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding:0;
+    background-color: $color-alt;
+    border-bottom: 1px solid #fff;
+    height: 40px;
+    line-height: 40px;
+      &:last-child{
+        border-radius: 0 0 4px 4px;
+      }
+      a:link,a:visited{
+        padding: 1% 20%;
+        border-radius: 0;
+      }
+      a:hover{
+        background-color: #fff;
+      }
+      
+  }
+}
+#nav-comments{
+  margin-bottom: 50px;
+  a:link,a:visited{
+    padding: 15px;
+  }
+  a:hover,.ativo{
+    background-color: $color-alt;
+    color: #fff;
+    border-radius: 6px;
+  }
+  @media screen and(max-width: $tablet) {
+      a:link,a:visited{
+        color:$color-alt;
+        padding:0;
+      
+      }    
+      a:hover{
+        color: #fff;
+        li{
+          background-color: $color-alt;
+        }
+      }
+      li{
+        padding: 0 15px;
+        background-color: #f9f9f9;
+        border:1px solid $color-alt;
+        border-radius: 0;
+        text-align: justify;
+        &:first-child{
+          border-top: 0px;
+        }
+      }
+
+  }
+}
+
+//Icone abrir/fechar menu
+.icon-menu{
+  margin-top: 25px;
+  display: none;
+}
+.icon-menu-projetos{
+  display: none;
+}
+@media screen and(max-width: $tablet) {
+    .icon-menu{
+      font-size: 40px;
+      float: right;
+      display: block;
+    }
+    .icon-menu-projetos{
+      display: block !important;
+      position: relative;
+
+      text-align: center;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 45px;
+      color: $color-alt;
+
+      border: 1px solid $color-alt;
+      border-radius: 10px;
+      background-color: #f9f9f9 ;
+
+      padding: 0 auto;
+      margin: 0 auto;
+      height: 50px;
+
+      &:after{
+        content:"";
+        position:absolute;
+        width: calc(100% + 1px);
+        height: 5px;
+        border-bottom: 1px solid $color-alt;
+        border-left: 1px solid $color-alt;
+        border-right: 1px solid $color-alt;
+        border-radius: 0 0 5px 5px;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+      }
+  
+    }
+
+    .logo{
+      a:link,a:visited{
+        color: $font-color;
+        
+      }
+      a:hover{
+        
+        color: $color-alt;
+      }
+    }
+}

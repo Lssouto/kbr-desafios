@@ -1,0 +1,49 @@
+.min-header{
+	margin:10px -15px;
+	text-transform: uppercase;
+	font-size: 13px;
+
+	i{
+		color: $dark-red;
+		font-size: 1.2em;
+	}
+}
+.main-header{
+	
+	span{
+		margin-top: 30px;
+	}
+	.oab{
+		@extend .font-1;
+	}	
+	.text-oab{
+		margin-top: 40px;
+		margin-left: 210px;
+	}
+	.search{
+		margin-top: 30px;
+		position: relative;
+		.search-btn{
+			background-color: $dark-red;
+			&:before{
+				font-family: FontAwesome;
+				content: "\f002";
+			}
+		}
+	}
+	.box{
+		.title{
+			font-size: 1.3em;
+		}
+		.content{
+			font-size: 1.4em;
+		}
+		a:link,a:visited{
+			font-size: 0.7em;
+		}
+		p{
+			margin-bottom: 0px;
+		}
+	}
+
+}

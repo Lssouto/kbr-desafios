@@ -1,0 +1,18 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "reset";
+@import "index";
+@import "navbar";
+@import "header";
+@import "footer";
+@import "otherClass";
+
+.browserupgrade {
+  
+  background: #ccc;
+  color: #000;
+ 
+}
