@@ -1,0 +1,178 @@
+#rodape{
+	.footer-header{
+		
+	padding-left: 25px;	
+
+	.col-md-2:not(:first-child):before,.col-md-3:not(:last-child):before{
+		content: "";
+		position: absolute;
+		height: 1px;
+		width: 90%;
+		background-color: $white;
+		opacity: 0.3;
+		@media screen and (max-width: 767px) {
+			top: -10px;
+			left: 15%;
+			transform: translateX(-15%);
+			
+		}
+	}
+	
+	.row .col-md-2,.col-md-3{
+		margin-bottom: 25px;
+	}
+	@media screen and (min-width: 992px) {
+
+		height: 325px;
+		padding-left: 0;
+
+		.row .col-md-2,.col-md-3{
+			height: 200px;
+			margin-bottom: 0;
+		}
+		.col-md-2:not(:first-child):before,.col-md-3:not(:last-child):before{
+			content: "";
+			position: absolute;
+			height: 1px;
+			width: 100px;
+			background-color: $white;
+			opacity: 0.3;
+			right: -41px;
+			top: 37%;
+			transform: rotate(90deg) translateX(-40%) translateY(-50%);
+		}
+	}
+	background: $dark-blue;
+	color: $white;
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	}	
+	.logo-oab-footer{
+
+		@media screen and (min-width: 992px) {
+			padding:80px 0 0 0;
+		}
+		text-align: center;		
+		img{
+			opacity: 0.2;
+			display: inline-block;
+		}
+		
+	}	
+	.title{
+		text-transform: uppercase;
+		margin-bottom: 35px;
+	}
+	.content{
+		
+		a:link,a:visited{
+			color: $white;
+			text-decoration: none;
+			color: darken($white,15%);
+		}
+		a:hover{
+			color: $white;
+			text-decoration: none;
+		}
+		ul{
+			padding: 0;
+		}
+		li{
+			list-style: none;
+			margin-bottom: 2px;
+		}
+		.row{
+			margin-bottom: 15px
+		}
+		i.fa{
+			display: inline-block;
+			font-size: 30px;
+			vertical-align: top;
+			margin-left: 6%;
+			opacity: 0.6;
+		}
+		i.fa-map-marker{
+			font-size: 40px;
+		}
+		p{
+			margin-left: 10%;
+			display: inline-block;
+			width: 70%;
+		}
+
+	}
+	
+	.newsletter{
+		.row{
+			padding: 0 15px;
+
+		}
+		.form-control{
+			width: 60%;
+			background-color: $grey-1;
+			border: 0px;
+			color: $white;
+
+			//TOP ISSO AQUI
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			  color: $white;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+			  color: $white;
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+			  color: $white;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+			  color: $white;
+			}
+		}
+		.cadastro{
+			position: relative;
+			margin-top: 5px;
+		}
+		.cadastro-btn{
+			background-color: $dark-blue;
+			color: $white;
+			border-radius: 0 30px 30px 0; 
+			@media screen and (min-width: 768px) {
+				left: 48%;
+			}
+			@media screen and (max-width: 767px) {
+				right: 411%;
+			}
+		}
+	}
+	.compartilhe{
+		text-align: right;
+		margin-right: 15px;
+		margin-top: 80px;
+		i.fa{
+			border: 3px solid $white;
+			font-size: 20px;
+			vertical-align: baseline;
+		}
+		i.fa-twitter{
+			border-radius: 30px;
+			padding:8px;
+		}
+		i.fa-facebook{
+			padding: 8px 12px;
+			border-radius: 50px;
+		}
+	}
+	.footer-bottom{
+		p{
+			color: $dark-blue;
+			font-weight: bolder;
+			font-size: 12px;
+			margin-top: 15px;
+			span{
+				color: red;
+				text-transform: uppercase;
+			}
+		}
+	}
+	
+}

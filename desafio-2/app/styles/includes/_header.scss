@@ -1,5 +1,6 @@
 .min-header{
-	margin:10px -15px;
+	margin:10px 0;
+	
 	text-transform: uppercase;
 	font-size: 13px;
 
@@ -15,13 +16,13 @@
 	}
 	.oab{
 		@extend .font-1;
+		padding: 10px 30px 0 30px
 	}	
 	.text-oab{
 		margin-top: 40px;
 		margin-left: 210px;
 	}
 	.search{
-		margin-top: 30px;
 		position: relative;
 		.search-btn{
 			background-color: $dark-red;
@@ -44,6 +45,31 @@
 		p{
 			margin-bottom: 0px;
 		}
+		@media screen and (max-width: 991px ) {
+			display: none;
+		}
 	}
 
+}
+
+@media screen and (max-width: 767px) {
+	#header.scroll{
+		position: fixed;
+		z-index: 10;
+		height: 120px;
+		background-color: $white;
+		width: 100%;
+		top: 0;
+		b{
+			display: none;
+		}
+		.oab img{
+			height: 50px;
+			margin-left: 25%;
+		}
+		.search{
+			margin-top: 5px; 
+		}
+
+	}
 }

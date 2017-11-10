@@ -6,8 +6,10 @@ $icon-font-path: '../fonts/';
 //Colors
 $grey-1 : #8d8d8d;
 $grey-2 : #f2f2f2;
+$grey-3 : #f0f0f0;
 $dark-red : #aa3337;
 $dark-blue : #24547e;
+$green-1: #0d8d34;
 $white : #fff;
 $black : #000;
 
@@ -20,17 +22,38 @@ $black : #000;
 	font-family: "Oswald";
 }
 
+//includes
+@import "includes/header";
+@import "includes/navbar";
+@import "includes/rodape";
+@import "includes/breadcumbs";
+
 //Pages
-@import "header";
-@import "navbar";
 @import "index";
+@import "convenio";
 
+*{
+	@extend .fast-e;
+}
+.fast-e{
+	-webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+.slow-e{
 
+	-webkit-transition: all 0.4s linear 0s;
+    -moz-transition: all 0.4s linear 0s;
+    -o-transition: all 0.4s linear 0s;
+    transition: all 0.4s linear 0s;
+}
 //Global
 body{
   color: $grey-1;
   font-size: 14px;
   @extend .font-1;
+  padding-bottom: 200px;//Retirar
 }
 
 .left{
@@ -46,7 +69,7 @@ body{
 	margin: 0;
 }
 span.alt{
-	color: $dark-red
+	color: $dark-red;
 }
 .semi-circle{
 	border-radius: 40px;
@@ -54,16 +77,23 @@ span.alt{
 .title-header{
 	@extend .font-1;
 	margin: 40px 0;
+	text-align: center;
 	span{
 		color: $dark-red;
 	}
 	i{
 		margin-right: 25px;	
 	}
+	@media screen and (min-width: 992px) {
+		text-align: justify;
+	}
 }
 
 .box{
 	position: relative;
+	margin-top:10px;
+	margin-bottom: 15px;
+	
 	&.min{
 		font-size: 0.8em;
 	}
@@ -113,6 +143,15 @@ span.alt{
 	.content-container{
 		padding: 25px;
 	}
+	&.zoom-box:hover{
+		box-shadow: 0 0 15px 0 rgba(0,0,0,0.8);
+		z-index: 10;
+		transform: scale(1.1,1.1);
+		.box{
+			z-index:3;
+		}
+	}
+
 }
 .btn {
 	&.no-radius{
@@ -151,4 +190,36 @@ span.alt{
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+}
+
+//Icons
+.icon{
+	position: relative;
+}
+.icon-document:before{
+	content: url("../images/icons/document.png");
+	height: 30px;
+	width: 30px;
+}
+.icon-dual-user:before{
+	content: url("../images/icons/dual-user.png");
+	height: 30px;
+	width: 30px;
+}
+.icon-check:before{
+	content: url("../images/icons/check.png")
+	;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+//rset
+a:link,a:visited{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
 }

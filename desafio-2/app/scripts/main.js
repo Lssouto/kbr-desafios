@@ -19,5 +19,35 @@ $(document).ready(function(){
 	    }
 	  });
 	}());
+	let flag = false;
 
+	$('.navbar-toggle').on('click',function(){
+		if(!flag)
+		$('.navbar-body').animate({
+			left: "0"
+		},500,function(){
+		  flag = true;	
+		});
+		else
+		$('.navbar-body').animate({
+			left: "-100%"
+		},500,function(){
+		 flag = false;	
+		});
+	});
+
+	$(window).scroll( (event) =>{
+
+		//Posicao atual do Scroll
+		var scroll = $(window).scrollTop();
+	   //Exibe se logne do bottom ou do top
+	    if (scroll > 100 ) {
+	    	$("#header").addClass("scroll")
+	    	
+	    }
+	    //Caso contrario ele esconde o scroll-nav
+	    else{
+	   		$("#header").removeClass("scroll");
+	    }
+	});
 });
