@@ -121,149 +121,210 @@
 					<div class="col-md-12">
 						<ul>
 							<li>Home</li>
-							<li>Convênio</li>
+							<li>Cadastrar Currículo</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
 		
-		<section id="convenios">
+		<section id="cadastro">	
 			<div class="container">
-				<div class="title-header row">
-					<h2><span>Convênios</span></h2>
-				</div>
-
 				<div class="row">
-					<div class="lista-convenios">
-						<div class="lista-header text-right">
-							Filtrar por : 
-							<select name="filtro" id="filtro">
-								<option value="" disabled>Filtro</option>
-								<option value="" >Filtro0</option>
-								<option value="" >Filtro1</option>
-								<option value="" >Filtro2</option>
-								<option value="" >Filtro3</option>
-								<option value="" >Filtro4</option>
-
-							</select>
+					<div class="col-md-3">
+						<ul class="lista-formularios">
+							<li class="item-formulario"><a href="#0">Área Restrita</a></li>
+							<li class="item-formulario"><a href="#0">Cadastro Currículo</a></li>
+							<li class="item-formulario"><a href="#0">Cadastrar Empresa</a></li>
+							<li class="item-formulario"><a href="#0">Vagas Disponíveis</a></li>
+						</ul>
+					</div>	
+					<div class="col-md-8 col-md-offset-1">
+						<div class="row title-header">
+							<h2><span>Cadastrar Currículo</span></h2>
 						</div>
-						<div class="lista-body-detalhes">
-							<div class="box row">
-								<div class="col-md-2">
-									<img src="images/convenios/fullfight.png" alt="">
-								</div>
-								<div class="col-md-10">
-									<div class="title">
-										Academia Full Fighter
+						<div class="row">
+							<form id="form-curriculo">
+								<fieldset>	
+								<div class="box max">
+								<h4> <span class="alt">Dados Básicos</span></h4>
+									<div class="col-md-7">
+										<label for="nome">Nome</label>
+										<input type="text" name="nome" id="nome" class="form-control">
 									</div>
-									<div class="content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, odio similique dicta officiis quos fugit facere at neque ad magnam voluptate natus veniam eveniet tempore accusamus labore dolor et iusto fuga nam minus porro unde ut hic quae! Sint, ullam.</p>
-										<a href="#0">www.academia.com.br</a>
-										<div class="box zoom-box radius bg-dark-blue">
-											<i class="fa fa-phone"></i>(13) 0000-0000
+									<div class="col-md-5">
+										<label for="email">E-mail</label>
+										<input type="text" name="email" id="email" class="form-control">
+									</div>
+								</div>
+
+								<div class="box max">
+									<div class="col-md-7">
+										<label for="cpf">CPF</label>
+										<input type="text" name="cpf" id="cpf" class="form-control">
+									</div>
+									<div class="col-md-5">
+										<label for="estado-civil">Estado Civil</label>
+										<input type="text" name="estado-civil" id="estado-civil" class="form-control">
+									</div>
+								</div>
+
+								<div class="box max">
+									<div class="col-md-3">
+										<label for="dt-nasc">Data de Nascimento</label>
+										<input type="text" name="dt-nasc" id="dt-nasce" class="form-control">
+									</div>
+									<div class="col-md-9">
+										<label for="sexo">Sexo</label><br>
+										<div class="sexo">	
+											<label for=""><span class="alt-2">MASC</span></label>
+											<input type="radio" name="sexo">
+											<label for=""><span class="alt">FEM</span></label>
+											<input type="radio" name="sexo">
 										</div>
 									</div>
 								</div>
-								<div class="col-md-12">
-									<ul class="lista-beneficios">
-										<li>
-											<i class="icon icon-check"></i>
-											<div class="texto"><b>Benefícios</b> <br>
-												Desconto de 15% sobre os produtos
+								
+								<div class="box max">
+									<div class="col-md-7">
+										<label for="endereco">Endereço</label>
+										<input type="text" name="endereco" id="endereco" class="form-control">
+									</div>
+									<div class="col-md-5">
+										<label for="cep">CEP</label>
+										<input type="text" name="cep" id="cep" class="form-control">
+									</div>
+								</div>	
+								
+								<div class="box max">
+									<div class="col-md-2">
+										<label for="UF">UF</label>
+										<select name="uf" id="uf" class="form-control">
+											<option value="">1</option>
+											<option value="">2</option>
+											<option value="">3</option>
+											<option value="">4</option>
+										</select>
+									</div>
+									<div class="col-md-5">
+										<label for="cidade">Cidade</label>
+										<input type="text" name="cidade" id="cidade" class="form-control">
+									</div>
+									<div class="col-md-5">
+										<div class="row">
+											<div class="col-md-6">
+												<label for="telefone">Telefone</label>
+												<input type="text" name="telefone" id="telefone" class="form-control">
 											</div>
-										</li>
-										<li>
-											<i class="icon icon-check"></i>
-											<div class="texto"><b>Benefícios</b> <br>
-												Desconto de 15% sobre os produtos
+											<div class="col-md-6">
+												<label for="celular">Celular</label>
+												<input type="text" name="celular" id="calular" class="form-control">
 											</div>
-										</li>
-										<li>
-											<i class="icon icon-check"></i>
-											<div class="texto"><b>Benefícios</b> <br>
-												Desconto de 15% sobre os produtos
-											</div>
-										</li>
-									</ul>
+										</div>
+									</div>
 								</div>
-							</div>
+								</fieldset>
+								<fieldset>	
+
+								<div class="box max">
+								<h4><span class="alt">Dados Profissionais</span></h4>
+									<div class="col-md-6">
+										<label for="especialidade">Especialidade</label>
+										<input type="text" name="especialidade" id="especialidade" class="form-control">
+									</div>
+									<div class="col-md-6">
+										<label for="est-adv">Estagiário/Advogado</label>
+										<select name="est-adv" id="est-adv" class="form-control">
+											<option value="">Estagário</option>
+											<option value="">Advogado</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="box max">
+									<div class="col-md-6">
+										<label for="cargo">Cargo Desejado</label>
+										<input type="text" name="cargo" id="cargo" class="form-control">
+									</div>
+									<div class="col-md-6">
+										<label for="resumo">Breve Resumo</label>
+										<input type="text" name="resumo" id="resumo" class="form-control">
+									</div>
+								</div>
+
+								<div class="box max">
+									<div class="col-md-6">
+										<label for="pt-sal">Pretensão salarial</label>
+										<input type="text" name="pt-sal" id="pt-sal" class="form-control">
+									</div>
+								</div>
+								</fieldset>
+								<fieldset>	
+								<div class="box max">
+								<h4><span class="alt">Idiomas</span></h4>
+									<div class="col-md-9">
+										<div class="box max col-md-12">
+											<span class="alt">Inglês:</span>
+											<label for="">Não Possuo</label>
+											<input type="radio" name="ingles" >
+											<label for="">Básico</label>
+											<input type="radio" name="ingles" >
+											<label for="">Intermediário</label>
+											<input type="radio" name="ingles" >
+											<label for="">Avançado</label>
+											<input type="radio" name="ingles" >
+										</div>
+										<div class="box max col-md-12">
+											<span class="alt">Espanhol:</span>
+											<label for="">Não Possuo</label>
+											<input type="radio" name="espanhol" >
+											<label for="">Básico</label>
+											<input type="radio" name="espanhol" >
+											<label for="">Intermediário</label>
+											<input type="radio" name="espanhol" >
+											<label for="">Avançado</label>
+											<input type="radio" name="espanhol" >
+										</div>
+									</div>
+									<div class="col-md-3">
+										<label for="o-idioma">Outros Idiomas</label>
+										<input type="text" name="o-idioma" id="o-idioma" class="form-control">
+									</div>
+								</div>
+								</fieldset>
+
+								<fieldset>
+								<div class="box max">
+									<div class="col-md-3">
+										<h4><span class="alt">Currículo</span></h4>
+									</div>
+									<div class="col-md-9">
+										<input type="text" name="curriculo" id="curriculo" class="form-control" placeholder="Envie seu Curriculo">
+										<button type="button" class="btn field-btn carregar-btn">Carregar</button>
+									</div>
+								</div>
+								</fieldset>
+								<fieldset>	
+								<h4><span class="alt"><b>Informações</b> de acesso</span></h4>
+								<div class="box max">
+									<div class="col-md-4">
+										<label for="i-email">E-mail</label>
+										<input type="text" id="i-email" name="i-email" class="form-control">
+									</div>
+									<div class="col-md-4">
+										<label for="i-senha">Senha</label>
+										<input type="text" id="i-senha" name="i-senha" class="form-control">
+									</div>
+									<div class="col-md-4">
+										<label for="i-confirm">Confirmar Senha</label>
+										<input type="text" id="i-confirm" name="i-confirm" class="form-control">
+									</div>
+								</div>
+								</fieldset>
+								<button type="button" class="btn box bg-dark-blue submit-btn col-md-3">realizar cadastro</button>
+							</form>
+						
 						</div>
-					</div>
-				</div>
-				<div class="title-header row">
-					<h2><span>Outros</span> Convênios</h2>
-				</div>
-
-				<div class="lista-body">
-					<ul>
-						<li class="box row">
-							<div class="col-md-2">
-								<img src="images/convenios/fullfight.png" alt="">
-							</div>
-							<div class="col-md-8">
-								<div class="title">
-									Academia Full Fighter
-								</div>
-								<div class="content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, odio similique dicta officiis quos fugit facere at neque ad magnam voluptate natus veniam eveniet tempore accusamus labore dolor et iusto fuga nam minus porro unde ut hic quae! Sint, ullam.</p>
-									<a href="#0">www.academia.com.br</a>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="box zoom-box max radius bg-dark-blue">
-									<i class="fa fa-phone"></i>(13) 0000-0000
-								</div>
-							</div>
-						</li>
-
-						<li class="box row">
-							<div class="col-md-2">
-								<img src="images/convenios/marathon.png" alt="">
-							</div>
-							<div class="col-md-8">
-								<div class="title">
-									Academia Full Fighter
-								</div>
-								<div class="content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, odio similique dicta officiis quos fugit facere at neque ad magnam voluptate natus veniam eveniet tempore accusamus labore dolor et iusto fuga nam minus porro unde ut hic quae! Sint, ullam.</p>
-									<a href="#0">www.academia.com.br</a>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="box zoom-box max radius bg-dark-blue">
-									<i class="fa fa-phone"></i>(13) 0000-0000
-								</div>
-							</div>
-						</li>
-
-						<li class="box row">
-							<div class="col-md-2">
-								<img src="images/convenios/marathon.png" alt="">
-							</div>
-							<div class="col-md-8">
-								<div class="title">
-									Academia Full Fighter
-								</div>
-								<div class="content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, odio similique dicta officiis quos fugit facere at neque ad magnam voluptate natus veniam eveniet tempore accusamus labore dolor et iusto fuga nam minus porro unde ut hic quae! Sint, ullam.</p>
-									<a href="#0">www.academia.com.br</a>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="box zoom-box max radius bg-dark-blue">
-									<i class="fa fa-phone"></i>(13) 0000-0000
-								</div>
-							</div>
-						</li>
-
-					</ul>
-
-				</div>
-
-				<div class="row">
-					<div class="box zoom-box radius bg-dark-red col-xs-9 col-md-2 btn-ver-mais">
-						<a href="#0"> Ver Mais Convênios</a>
 					</div>
 				</div>
 			</div>
@@ -298,7 +359,7 @@
 							</div>
 						</div>
 
-						<div class="col-md-2 box ">
+						<div class="col-md-2 box "	>
 							<div class="title">
 								Fale Conosco
 							</div>

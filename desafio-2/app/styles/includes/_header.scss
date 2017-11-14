@@ -33,15 +33,20 @@
 		}
 	}
 	.box{
+		padding: 10px 2px;
 		.title{
 			font-size: 1.3em;
 		}
 		.content{
 			font-size: 1.4em;
 		}
-		a:link,a:visited{
+		a.link:link,a.link:visited{
+			padding: 2px 4px;
 			font-size: 0.7em;
+			background-color: $white;
+			color: $black;
 		}
+
 		p{
 			margin-bottom: 0px;
 		}

@@ -134,42 +134,11 @@
 			}
 		}	
 	}
-	.paginas{
-		margin: 50px auto;
-		li{
-			display: inline-block;
-			margin: 0 5px; 
-			i.fa{
-				color: $dark-blue;
-				margin: 0 10px;
-				font-size: 8px;
-				display: inline-block;
-				vertical-align: middle;
-			}
-			i.fa.min{
-				font-size: 4px;
-				margin: -4px;
-			}
-			a:link,a:visited{
-					color: $black;
-					padding: 10px 5px;
-					font-weight: bolder;
-					border: 2px solid $white;
-			}
-			&:not(:last-child):not(:first-child){
-				a:link,a:visited{
-					border-radius: 10px;
-				}
-				a:hover{
-					border: 2px solid $dark-red;
-				}
-			}
-		}
-	}
+	
 	.btn-ver-mais{
 		margin-left: 50px;
+		margin-top: 20px;
 		a:link,a:visited{
-			color: $white;
 			font-weight: bolder;
 			padding: 10px 25px;
 			@media screen and (max-width: 767px) {
