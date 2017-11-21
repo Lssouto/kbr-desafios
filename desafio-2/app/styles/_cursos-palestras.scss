@@ -5,130 +5,10 @@
 	li{
 		list-style: none;
 	}
-	h3{
+	h3.sub-title{
 		margin: 50px 0 30px 15px;
-
 	}
-	li.box{
-		margin: 0 0 0 15px;
-		&:not(:last-child):before{
-			content: "";
-			width: 94%;
-			height: 2px;
-			background: $grey-2;
-			position: absolute;
-			display: inline-block;
-			bottom: -1px;
-			left: 50%;
-			transform: translateX(-50%);
-		}
-		.title{
-			text-transform: capitalize;
-			color: $dark-red;
-			h3{
-				margin: 0 0 20px;
-			}
-		}
-		.content p{
-			@extend .font-1;
-			margin: 10px 0 20px;
-		}
 
-		a:link,a:visited{
-			margin-top: 20px;
-			margin-bottom: 10px;
-			padding: 6px 28px;
-		}
-
-		&:hover{
-
-			box-shadow: 0 0 15px 0 rgba(0,0,0,0.3);
-			z-index: 2;
-
-			&:before{
-				content: "";
-				width: 5px;
-				height: 100%;
-				display: inline-block;
-				position: absolute;
-				left: 0;
-				top: 0;
-				background-color: $dark-red;
-			}
-		}
-		.date{
-			position: absolute;
-			top: 25px;
-			right: 25px;
-			display: inline-block;
-			text-align: center;
-		}
-	}
-	.title-header > .share{
-		font-weight: bolder;
-		margin-bottom: 25px;
-		i.fa{
-			font-size: 16px;
-			margin-right: 5px;
-		}
-		.share-box{
-			border-radius: 4px;
-			display: inline-block;
-			padding: 1px 5px;
-			margin: 30px 10px 0 20px;
-			position: relative;
-		}
-		.fb-box{
-			background-color: #4763b3;
-
-			a:link,a:visited{
-				color: $white;
-			}
-			i.fa{
-				color: $white;
-			}
-			&:after{
-				content: "123";
-				border: 1px solid #e0e0e0;
-				display: inline-block;
-				position: absolute;
-				right: -27px;
-				top: 0;
-				padding: 0px 2px 0px 0 ;
-			}
-		}
-		.twitter-box{
-			border:1px solid #e0e0e0;
-			i.fa{
-				color: #00acee;
-			}
-			&:after{
-				content: "72";
-				border: 1px solid #e0e0e0;
-				display: inline-block;
-				position: absolute;
-				right: -20px;
-				top: 0;
-				padding: 0px 2px 0px 0 ;
-			}
-		}
-		.gplus-box{
-			border:1px solid #e0e0e0;
-
-			a:link,a:visited{
-				color: $dark-red;
-			}
-			&:after{
-				content: "3";
-				border: 1px solid #e0e0e0;
-				display: inline-block;
-				position: absolute;
-				right: -12px;
-				top: 0;
-				padding: 0px 2px 0px 0 ;
-			}
-		}
-	}
 	#carousel-palestras-page{
 		border-radius: 8px;
 		border: 3px solid $dark-red;
@@ -156,20 +36,20 @@
 			height: inherit;
 		}
 	}
-	i.fa{
-		display: inline-block;
-		font-size: 45px;
-		color: $dark-red;
-	}
-	i.fa +.content{
-		color: $dark-red;
-		font-weight: bolder;
-	}
 	.content{
 		display: inline-block;
 		margin-left: 15px;
 	}
 	.dates{
+		i.fa{
+			display: inline-block;
+			font-size: 45px;
+			color: $dark-red;
+		}
+		i.fa +.content{
+			color: $dark-red;
+			font-weight: bolder;
+		}
 		margin: 40px 0;
 		h4{
 			color: $dark-red;

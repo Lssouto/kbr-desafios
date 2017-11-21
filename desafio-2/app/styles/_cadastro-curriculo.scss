@@ -1,47 +1,5 @@
 #cadastro {
-	.lista-formularios{
-		padding: 0;
-		margin: 40px 0;
-
-		.item-formulario{
-			list-style: none;
-			width: 100%;
-			background-color: $grey-2;
-			border-radius: 6px;
-			margin: 10px 0;
-			padding: 13px 0;
-			position: relative;
-
-			&:before{
-				content: "\f105";
-				font-family: FontAwesome;
-				color: $dark-red;
-				display: inline-block;
-				left: 30px;
-				top: 50%;
-				transform: translateY(-50%);
-				position: absolute;
-				font-weight: bolder;
-			}
-
-			&:hover{
-				background-color: $dark-red;
-				a:link,a:visited{
-					color: $white;
-				}
-				&:before{
-					color: $white;
-					font-weight: bolder;
-				}
-			}
-
-			a:link,a:visited{
-				color: $dark-red;
-				padding: 13px 80px 13px 50px;
-			}
-
-		}
-	}
+	
 	.form-control{
 		height: 50px;
 		border: 1px solid $grey-2;

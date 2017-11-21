@@ -1,0 +1,40 @@
+#vagas{
+	h2{
+		font-size: 29px;
+		margin-bottom: 25px;
+	}
+	.title-header{
+		text-align: left;
+	}
+	.btn.box{
+		margin-top: 25px;
+		&:hover{
+			background-color: lighten($dark-blue,10%);
+		}
+	}
+	.box{
+		p{
+			margin-bottom: 40px;
+		}
+	}
+	.empresa{
+		@media screen and (min-width: 992px) {
+			margin-top: -20px;
+		}
+		margin-top: 20px;
+		color: $dark-blue;
+	}
+	label{
+		width: 100%;
+		text-align: left;
+
+	}
+	.form-control{
+		border-radius: 0;
+		margin-bottom: 15px;
+		&:active,&:focus{
+			box-shadow: none;
+			border: 1px solid $dark-red;
+		}
+	}
+}

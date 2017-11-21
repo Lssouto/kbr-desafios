@@ -69,7 +69,7 @@
 					<div class="col-xs-12 col-md-4">
 						<div class="row">
 						
-							<div class="box  zoom-box min radius bg-dark-red col-md-12 ">
+							<div class="box  zoom-box min radius bg-dark-red col-md-12">
 								<div class="title col-md-4">Pesquisa de Satisfação</div>
 								<div class="content text-right col-md-8">
 									<p>Consulte a página de benefícios  </p>
@@ -121,168 +121,211 @@
 					<div class="col-md-12">
 						<ul>
 							<li>Home</li>
-							<li>Cursos e Palestras</li>
+							<li>Cadastrar Currículo</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
 		
-		<section id="cursos-palestras-page">
+		<section id="cadastro">	
 			<div class="container">
-
-				<div class="title-header row">
-					<h2 class="col-md-6"><span>Curso novo Código de Processo Civil</span></h2>
-
-					<div class="col-md-6 share-container text-right">
-						<div class="fb-box share-box">
-							<a href="#0"><i class="fa fa-facebook-official"></i> Curtir</a>
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="lista-formularios">
+							<li class="item-formulario"><a href="#0">Área Restrita</a></li>
+							<li class="item-formulario"><a href="#0">Cadastro Currículo</a></li>
+							<li class="item-formulario"><a href="#0">Cadastrar Empresa</a></li>
+							<li class="item-formulario"><a href="#0">Vagas Disponíveis</a></li>
+						</ul>
+					</div>	
+					<div class="col-md-8 col-md-offset-1">
+						<div class="row title-header">
+							<h2><span>Cadastrar Currículo</span></h2>
 						</div>
-						<div class="twitter-box share-box">
-							<a href="#0"><i class="fa fa-twitter"></i> Tweetar</a>
-						</div>
-						<div class="gplus-box share-box">
-							<a href="#0"><i class="fa fa-google-plus"></i>1</a>
-						</div>
-					</div>
-
-					<div class="col-md-12">
-						Publicado em: <span class="alt">12/05/2017</span>
-					</div>
-
-				</div>
-
-				<div class="row">	
-					<div class="col-md-12">
-						<div id="carousel-palestras-page" class="carousel slide" data-ride="carousel">
-							<ol class="carousel-indicators">
-								<li data-target="#carousel-palestras-page" data-slide-to="0" class="active">1</li>
-								<li data-target="#carousel-palestras-page" data-slide-to="1" class="">2</li>
-								<li data-target="#carousel-palestras-page" data-slide-to="2" class="">3</li>
-							</ol>
-							<div class="carousel-inner">
-								<div class="item active">
-									<img alt="First slide" src="images/cursos-palestras-carousel.jpg" class="img-responsive">
-									<div class="container">
-										<div class="carousel-caption">
-											<h1>Example headline.</h1>
-										</div>
+						<div class="row">
+							<form id="form-curriculo">
+								<fieldset>	
+								<div class="box max">
+								<h4> <span class="alt">Dados Básicos</span></h4>
+									<div class="col-md-7">
+										<label for="nome">Nome</label>
+										<input type="text" name="nome" id="nome" class="form-control">
+									</div>
+									<div class="col-md-5">
+										<label for="email">E-mail</label>
+										<input type="text" name="email" id="email" class="form-control">
 									</div>
 								</div>
-								<div class="item">
-									<img alt="First slide" src="images/cursos-palestras-carousel.jpg" class="img-responsive">
-									<div class="container">
-										<div class="carousel-caption">
-											<h1>Example headline-2.</h1>
-										</div>
+
+								<div class="box max">
+									<div class="col-md-7">
+										<label for="cpf">CPF</label>
+										<input type="text" name="cpf" id="cpf" class="form-control">
+									</div>
+									<div class="col-md-5">
+										<label for="estado-civil">Estado Civil</label>
+										<input type="text" name="estado-civil" id="estado-civil" class="form-control">
 									</div>
 								</div>
-								<div class="item">
-									<img alt="First slide" src="images/cursos-palestras-carousel.jpg" class="img-responsive">
-									<div class="container">
-										<div class="carousel-caption">
-											<h1>Example headline-2.</h1>
+
+								<div class="box max">
+									<div class="col-md-3">
+										<label for="dt-nasc">Data de Nascimento</label>
+										<input type="text" name="dt-nasc" id="dt-nasce" class="form-control">
+									</div>
+									<div class="col-md-9">
+										<label for="sexo">Sexo</label><br>
+										<div class="sexo">	
+											<label for=""><span class="alt-2">MASC</span></label>
+											<input type="radio" name="sexo">
+											<label for=""><span class="alt">FEM</span></label>
+											<input type="radio" name="sexo">
 										</div>
 									</div>
 								</div>
 								
-							</div>
-							<!-- <a class="left carousel-control" href="#carousel-palestras-page" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-							<a class="right carousel-control" href="#carousel-palestras-page" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> -->
+								<div class="box max">
+									<div class="col-md-7">
+										<label for="endereco">Endereço</label>
+										<input type="text" name="endereco" id="endereco" class="form-control">
+									</div>
+									<div class="col-md-5">
+										<label for="cep">CEP</label>
+										<input type="text" name="cep" id="cep" class="form-control">
+									</div>
+								</div>	
+								
+								<div class="box max">
+									<div class="col-md-2">
+										<label for="UF">UF</label>
+										<select name="uf" id="uf" class="form-control">
+											<option value="">1</option>
+											<option value="">2</option>
+											<option value="">3</option>
+											<option value="">4</option>
+										</select>
+									</div>
+									<div class="col-md-5">
+										<label for="cidade">Cidade</label>
+										<input type="text" name="cidade" id="cidade" class="form-control">
+									</div>
+									<div class="col-md-5">
+										<div class="row">
+											<div class="col-md-6">
+												<label for="telefone">Telefone</label>
+												<input type="text" name="telefone" id="telefone" class="form-control">
+											</div>
+											<div class="col-md-6">
+												<label for="celular">Celular</label>
+												<input type="text" name="celular" id="calular" class="form-control">
+											</div>
+										</div>
+									</div>
+								</div>
+								</fieldset>
+								<fieldset>	
+
+								<div class="box max">
+								<h4><span class="alt">Dados Profissionais</span></h4>
+									<div class="col-md-6">
+										<label for="especialidade">Especialidade</label>
+										<input type="text" name="especialidade" id="especialidade" class="form-control">
+									</div>
+									<div class="col-md-6">
+										<label for="est-adv">Estagiário/Advogado</label>
+										<select name="est-adv" id="est-adv" class="form-control">
+											<option value="">Estagário</option>
+											<option value="">Advogado</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="box max">
+									<div class="col-md-6">
+										<label for="cargo">Cargo Desejado</label>
+										<input type="text" name="cargo" id="cargo" class="form-control">
+									</div>
+									<div class="col-md-6">
+										<label for="resumo">Breve Resumo</label>
+										<input type="text" name="resumo" id="resumo" class="form-control">
+									</div>
+								</div>
+
+								<div class="box max">
+									<div class="col-md-6">
+										<label for="pt-sal">Pretensão salarial</label>
+										<input type="text" name="pt-sal" id="pt-sal" class="form-control">
+									</div>
+								</div>
+								</fieldset>
+								<fieldset>	
+								<div class="box max">
+								<h4><span class="alt">Idiomas</span></h4>
+									<div class="col-md-9">
+										<div class="box max col-md-12">
+											<span class="alt">Inglês:</span>
+											<label for="">Não Possuo</label>
+											<input type="radio" name="ingles" >
+											<label for="">Básico</label>
+											<input type="radio" name="ingles" >
+											<label for="">Intermediário</label>
+											<input type="radio" name="ingles" >
+											<label for="">Avançado</label>
+											<input type="radio" name="ingles" >
+										</div>
+										<div class="box max col-md-12">
+											<span class="alt">Espanhol:</span>
+											<label for="">Não Possuo</label>
+											<input type="radio" name="espanhol" >
+											<label for="">Básico</label>
+											<input type="radio" name="espanhol" >
+											<label for="">Intermediário</label>
+											<input type="radio" name="espanhol" >
+											<label for="">Avançado</label>
+											<input type="radio" name="espanhol" >
+										</div>
+									</div>
+									<div class="col-md-3">
+										<label for="o-idioma">Outros Idiomas</label>
+										<input type="text" name="o-idioma" id="o-idioma" class="form-control">
+									</div>
+								</div>
+								</fieldset>
+
+								<fieldset>
+								<div class="box max">
+									<div class="col-md-3">
+										<h4><span class="alt">Currículo</span></h4>
+									</div>
+									<div class="col-md-9">
+										<input type="text" name="curriculo" id="curriculo" class="form-control" placeholder="Envie seu Curriculo">
+										<button type="button" class="btn field-btn carregar-btn">Carregar</button>
+									</div>
+								</div>
+								</fieldset>
+								<fieldset>	
+								<h4><span class="alt"><b>Informações</b> de acesso</span></h4>
+								<div class="box max">
+									<div class="col-md-4">
+										<label for="i-email">E-mail</label>
+										<input type="text" id="i-email" name="i-email" class="form-control">
+									</div>
+									<div class="col-md-4">
+										<label for="i-senha">Senha</label>
+										<input type="text" id="i-senha" name="i-senha" class="form-control">
+									</div>
+									<div class="col-md-4">
+										<label for="i-confirm">Confirmar Senha</label>
+										<input type="text" id="i-confirm" name="i-confirm" class="form-control">
+									</div>
+								</div>
+								</fieldset>
+								<button type="button" class="btn box bg-dark-blue submit-btn col-md-3">realizar cadastro</button>
+							</form>
+						
 						</div>
 					</div>
-				</div>
-				<div class="row dates">
-
-					<div class="inicio">
-						<i class="fa fa-calendar"></i>
-						<div class="content">
-							<h4>
-								<span class="alt-2">Data de inicio</span><br>
-								12/05/2017
-							</h4>
-						</div>
-					</div>
-
-					<div class="fim">
-						<i class="fa fa-calendar"></i>
-						<div class="content">
-							<h4>
-								<span class="alt-2">Data de termino</span><br>
-								12/05/2017
-							</h4>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="row descricao col-md-12">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam fuga, molestiae quasi iste unde, id veniam reprehenderit suscipit delectus sint, vitae, dignissimos at enim! Quaerat hic similique nisi ab debitis autem. Ducimus ullam doloremque rem voluptas. Quaerat, adipisci. Distinctio natus quas fugiat? Fugiat nam quasi sit? Incidunt natus at sed.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad officia consequuntur accusantium, labore provident asperiores tempore harum eaque dolorum eius?</p>
-				</div>
-
-				<div class="row descricao-boxes">
-
-					<div class="col-md-4 text-center">
-						<div class="box zoom-box max">
-							<i class="icon icon-user"></i>
-							<div class="content">
-								<h4 class="text-justify">
-									<span class="alt-2">Promotora:</span><br>
-									OAB Praia Grande
-								</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="box zoom-box max">
-							<i class="icon icon-invest"></i>
-							<div class="content text-justify">
-								<h4>
-									<span class="alt-2">Investimento:</span><br>
-									R$200,00
-								</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="box zoom-box max">
-							<i class="icon icon-3man"></i>
-							<div class="content text-justify">
-								<h4>
-									<span class="alt-2">Vagas Disponíveis</span><br>
-									80 vagas
-								</h4>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="row text-center inscreva">
-					<div class="col-md-2 col-md-offset-5 col-xs-8 col-xs-offset-2">
-						<a href="#0" class="box zoom-box bg-dark-red radius">Inscreva-se</a>
-					</div>
-				</div>
-
-				<div class="row formulario">
-					<form action="" id="form-palestras">
-						<div class="col-md-4">
-							<label for="nome">Nome</label>	
-							<input type="text" name="nome" id="nome" class="form-control" required>
-						</div>
-						<div class="col-md-4">
-							<label for="e-mail">E-mail</label>	
-							<input type="text" name="e-mail" id="e-mail" class="form-control" required>
-						</div>
-						<div class="col-md-2">
-							<label for="telefone">Telefone</label>	
-							<input type="text" name="telefone" id="telefone" class="form-control" required>
-						</div>
-						<div class="col-md-2">
-						<button type="button" class="btn box max bg-dark-red radius">Finalizar</button>
-						</div>
-					</form>
 				</div>
 			</div>
 		</section>
@@ -316,7 +359,7 @@
 							</div>
 						</div>
 
-						<div class="col-md-2 box ">
+						<div class="col-md-2 box "	>
 							<div class="title">
 								Fale Conosco
 							</div>

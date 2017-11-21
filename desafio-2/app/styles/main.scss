@@ -35,6 +35,11 @@ $black : #000;
 @import "downloads";
 @import "cadastro-curriculo";
 @import "eventos";
+#institucional{
+	padding-bottom: 50px;
+}
+@import "links-uteis";
+@import "vagas";
 
 *{
 	@extend .fast-e;
@@ -84,7 +89,10 @@ span.alt-2{
 .title-header{
 	@extend .font-1;
 	margin: 40px 0;
-	text-align: center;
+	*:not(label){
+		text-align: center;
+	}
+
 	span{
 		color: $dark-red;
 	}
@@ -169,8 +177,231 @@ span.alt-2{
 	}
 	&:hover{
 		color: $white;
+
 	}
 	
+}
+.content-text {
+	margin-top: 40px;
+	p{
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+}
+.paginacao-btm{
+		margin: 50px auto;
+		li{
+			display: inline-block;
+			margin: 0 5px; 
+			i.fa{
+				color: $dark-blue;
+				margin: 0 10px;
+				font-size: 8px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			i.fa.min{
+				font-size: 4px;
+				margin: -4px;
+			}
+			a:link,a:visited{
+					color: $black;
+					padding: 10px 5px;
+					font-weight: bolder;
+					border: 2px solid $white;
+			}
+			&:not(:last-child):not(:first-child){
+				a:link,a:visited{
+					border-radius: 10px;
+				}
+				a:hover{
+					border: 2px solid $dark-red;
+				}
+			}
+		}
+	}
+.share-container{
+	font-weight: bolder;
+	margin-bottom: 25px;
+	i.fa{
+		font-size: 16px;
+		margin-right: 5px;
+	}
+	.share-box{
+		border-radius: 4px;
+		display: inline-block;
+		padding: 1px 5px;
+		margin: 30px 10px 0 20px;
+		position: relative;
+	}
+	.fb-box{
+		background-color: #4763b3;
+
+		a:link,a:visited{
+			color: $white;
+		}
+		i.fa{
+			color: $white;
+		}
+		&:after{
+			content: "123";
+			border: 1px solid #e0e0e0;
+			display: inline-block;
+			position: absolute;
+			right: -27px;
+			top: 0;
+			padding: 0px 2px 0px 0 ;
+		}
+	}
+	.twitter-box{
+		border:1px solid #e0e0e0;
+		i.fa{
+			color: #00acee;
+		}
+		&:after{
+			content: "72";
+			border: 1px solid #e0e0e0;
+			display: inline-block;
+			position: absolute;
+			right: -20px;
+			top: 0;
+			padding: 0px 2px 0px 0 ;
+		}
+	}
+	.gplus-box{
+		border:1px solid #e0e0e0;
+
+		a:link,a:visited{
+			color: $dark-red;
+		}
+		&:after{
+			content: "3";
+			border: 1px solid #e0e0e0;
+			display: inline-block;
+			position: absolute;
+			right: -12px;
+			top: 0;
+			padding: 0px 2px 0px 0 ;
+		}
+	}
+}
+.lista-formularios{
+	padding: 0;
+	margin: 40px 0;
+
+	.item-formulario{
+		list-style: none;
+		width: 100%;
+		background-color: $grey-2;
+		border-radius: 6px;
+		margin: 10px 0;
+		padding: 13px 0;
+		position: relative;
+
+		&:before{
+			content: "\f105";
+			font-family: FontAwesome;
+			color: $dark-red;
+			display: inline-block;
+			left: 30px;
+			top: 50%;
+			transform: translateY(-50%);
+			position: absolute;
+			font-weight: bolder;
+		}
+
+		&:hover{
+			background-color: $dark-red;
+			a:link,a:visited{
+				color: $white;
+			}
+			&:before{
+				color: $white;
+				font-weight: bolder;
+			}
+		}
+
+		a:link,a:visited{
+			color: $dark-red;
+			padding: 13px 75px 13px 50px;
+		}
+
+	}
+}
+ul.lista-l-r{
+		
+	li.box{
+		margin: 0 15px 0 15px;
+		&:not(:last-child):before{
+			content: "";
+			width: 100%;
+			height: 2px;
+			background: $grey-2;
+			position: absolute;
+			display: inline-block;
+			bottom: -1px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.title{
+			text-transform: capitalize;
+			color: $dark-red;
+			h3{
+				margin: 0 0 20px;
+			}
+		}
+		.content p{
+			@extend .font-1;
+			margin: 10px 0 20px;
+		}
+
+		a:link,a:visited{
+			margin-top: 20px;
+			margin-bottom: 10px;
+			padding: 6px 28px;
+		}
+
+		&:hover{
+
+			box-shadow: 0 0 15px 0 rgba(0,0,0,0.3);
+			z-index: 2;
+			@media screen and (min-width: 992px)  {
+				&:before{
+					content: "";
+					width: 5px;
+					height: 100%;
+					display: inline-block;
+					position: absolute;
+					left: 0;
+					top: 0;
+					background-color: $dark-red;
+				}
+			}
+			&:before{
+				content: "";
+				width: 100%;
+				height: 5px;
+				display: inline-block;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				top: 0;
+				background-color: $dark-red;
+			}
+		}
+		.date{
+			@media screen and (min-width: 992px) {
+				position: absolute;
+				top: 25px;
+				right: 25px;
+			}
+			display: inline-block;
+			text-align: right;
+			width: 100%;
+			margin-bottom: 10px;
+
+		}
+	}
 }
 // Colocar um buttao dentro do field
 .field-btn{
@@ -218,6 +449,7 @@ span.alt-2{
 	height: 30px;
 	width: 30px;
 }
+
 //rset
 a:link,a:visited{
 	text-decoration: none;
@@ -225,36 +457,13 @@ a:link,a:visited{
 a:hover{
 	text-decoration: none;
 }
-//other
-.paginacao-btm{
-		margin: 50px auto;
-		li{
-			display: inline-block;
-			margin: 0 5px; 
-			i.fa{
-				color: $dark-blue;
-				margin: 0 10px;
-				font-size: 8px;
-				display: inline-block;
-				vertical-align: middle;
-			}
-			i.fa.min{
-				font-size: 4px;
-				margin: -4px;
-			}
-			a:link,a:visited{
-					color: $black;
-					padding: 10px 5px;
-					font-weight: bolder;
-					border: 2px solid $white;
-			}
-			&:not(:last-child):not(:first-child){
-				a:link,a:visited{
-					border-radius: 10px;
-				}
-				a:hover{
-					border: 2px solid $dark-red;
-				}
-			}
-		}
+ul{
+	margin: 0;
+	padding: 0;
+	li{
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
 	}
+}
+

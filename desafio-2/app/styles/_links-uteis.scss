@@ -1,0 +1,32 @@
+#links-uteis{
+	.box{
+		margin: 0;
+		padding: 20px;
+	}
+	.item-link:before{
+		content: "\f105 ";
+		font-family: FontAwesome;
+		color: $dark-red;
+		margin-right: 15px;
+		display: inline-block;
+		vertical-align: super;
+		font-weight: bolder;
+	}
+	.item-link:after{
+		content: "";
+		width: 70%;
+		height: 2px;
+		background-color: $grey-2;
+		display: inline-block;
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		opacity: 0.8;
+	}
+	.content{
+		display: inline-block;
+		span.alt{
+			font-weight: bolder;
+		}
+	}
+}
