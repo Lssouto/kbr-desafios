@@ -42,8 +42,8 @@ $(document).ready(function(){
 		var scroll = $(window).scrollTop();
 	   //Exibe se logne do bottom ou do top
 	    if (scroll > 100 ) {
-	    	$("#header").addClass("scroll")
-	    	
+	    	$("#header").addClass("scroll");
+				    	
 	    }
 	    //Caso contrario ele esconde o scroll-nav
 	    else{
@@ -51,3 +51,16 @@ $(document).ready(function(){
 	    }
 	});
 });
+
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(-23.951984, -46.327441),
+        zoom: 16,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+	var myPosition = new google.maps.LatLng(-23.9521299,-46.3277627,21);
+	var mapa = new google.maps.Map(document.getElementById("mapa"), mapOptions);
+	var marker = new google.maps.Marker({position: myPosition});
+
+marker.setMap(mapa);
+};

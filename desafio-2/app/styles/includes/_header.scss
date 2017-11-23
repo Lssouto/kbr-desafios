@@ -16,7 +16,7 @@
 	}
 	.oab{
 		@extend .font-1;
-		padding: 10px 30px 0 30px
+		padding: 10px 30px 0 30px;
 	}	
 	.text-oab{
 		margin-top: 40px;
@@ -52,6 +52,20 @@
 		}
 		@media screen and (max-width: 991px ) {
 			display: none;
+		}
+	}
+	.col-md-4:first-child{
+		.box{
+			a:link,a:visited{
+				color: $dark-blue;
+			}
+		}
+	}
+	.col-md-4:last-child{
+		.box{
+			a:link,a:visited{
+				color: $dark-red;
+			}
 		}
 	}
 

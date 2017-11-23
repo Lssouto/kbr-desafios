@@ -121,209 +121,147 @@
 					<div class="col-md-12">
 						<ul>
 							<li>Home</li>
-							<li>Cadastrar Currículo</li>
+							<li>Cursos e Palestras</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
 		
-		<section id="cadastro">	
+		<section id="vagas">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-3">
-						<ul class="lista-formularios">
-							<li class="item-formulario"><a href="#0">Área Restrita</a></li>
-							<li class="item-formulario"><a href="#0">Cadastro Currículo</a></li>
-							<li class="item-formulario"><a href="#0">Cadastrar Empresa</a></li>
-							<li class="item-formulario"><a href="#0">Vagas Disponíveis</a></li>
-						</ul>
-					</div>	
-					<div class="col-md-8 col-md-offset-1">
-						<div class="row title-header">
-							<h2><span>Cadastrar Currículo</span></h2>
+				<div class="title-header row">
+					<div class=" voltar-btn">
+						<a href="#0" class="box bg-dark-red radius"> <i class="fa fa-arrow-left"></i>Voltar</a>	
+					</div>
+					<h2><span>Vagas e Currículos</span></h2>
+				</div>
+				<div class="row dados-vaga">
+
+					<div class="col-md-8">
+
+						<div class="date">
+							<span class="alt">25/08/2017 às 12h00</span>
 						</div>
-						<div class="row">
-							<form id="form-curriculo">
-								<fieldset>	
-								<div class="box max">
-								<h4> <span class="alt">Dados Básicos</span></h4>
-									<div class="col-md-7">
-										<label for="nome">Nome</label>
-										<input type="text" name="nome" id="nome" class="form-control">
-									</div>
-									<div class="col-md-5">
-										<label for="email">E-mail</label>
-										<input type="text" name="email" id="email" class="form-control">
-									</div>
-								</div>
 
-								<div class="box max">
-									<div class="col-md-7">
-										<label for="cpf">CPF</label>
-										<input type="text" name="cpf" id="cpf" class="form-control">
-									</div>
-									<div class="col-md-5">
-										<label for="estado-civil">Estado Civil</label>
-										<input type="text" name="estado-civil" id="estado-civil" class="form-control">
-									</div>
-								</div>
+						<div class="box">
+							<div class="title">
+								<h2>Auxiliar Administrativo</h2>
+							</div>
+						</div>
 
-								<div class="box max">
-									<div class="col-md-3">
-										<label for="dt-nasc">Data de Nascimento</label>
-										<input type="text" name="dt-nasc" id="dt-nasce" class="form-control">
-									</div>
-									<div class="col-md-9">
-										<label for="sexo">Sexo</label><br>
-										<div class="sexo">	
-											<label for=""><span class="alt-2">MASC</span></label>
-											<input type="radio" name="sexo">
-											<label for=""><span class="alt">FEM</span></label>
-											<input type="radio" name="sexo">
-										</div>
-									</div>
-								</div>
-								
-								<div class="box max">
-									<div class="col-md-7">
-										<label for="endereco">Endereço</label>
-										<input type="text" name="endereco" id="endereco" class="form-control">
-									</div>
-									<div class="col-md-5">
-										<label for="cep">CEP</label>
-										<input type="text" name="cep" id="cep" class="form-control">
-									</div>
-								</div>	
-								
-								<div class="box max">
-									<div class="col-md-2">
-										<label for="UF">UF</label>
-										<select name="uf" id="uf" class="form-control">
-											<option value="">1</option>
-											<option value="">2</option>
-											<option value="">3</option>
-											<option value="">4</option>
-										</select>
-									</div>
-									<div class="col-md-5">
-										<label for="cidade">Cidade</label>
-										<input type="text" name="cidade" id="cidade" class="form-control">
-									</div>
-									<div class="col-md-5">
-										<div class="row">
-											<div class="col-md-6">
-												<label for="telefone">Telefone</label>
-												<input type="text" name="telefone" id="telefone" class="form-control">
-											</div>
-											<div class="col-md-6">
-												<label for="celular">Celular</label>
-												<input type="text" name="celular" id="calular" class="form-control">
-											</div>
-										</div>
-									</div>
-								</div>
-								</fieldset>
-								<fieldset>	
-
-								<div class="box max">
-								<h4><span class="alt">Dados Profissionais</span></h4>
-									<div class="col-md-6">
-										<label for="especialidade">Especialidade</label>
-										<input type="text" name="especialidade" id="especialidade" class="form-control">
-									</div>
-									<div class="col-md-6">
-										<label for="est-adv">Estagiário/Advogado</label>
-										<select name="est-adv" id="est-adv" class="form-control">
-											<option value="">Estagário</option>
-											<option value="">Advogado</option>
-										</select>
-									</div>
-								</div>
-
-								<div class="box max">
-									<div class="col-md-6">
-										<label for="cargo">Cargo Desejado</label>
-										<input type="text" name="cargo" id="cargo" class="form-control">
-									</div>
-									<div class="col-md-6">
-										<label for="resumo">Breve Resumo</label>
-										<input type="text" name="resumo" id="resumo" class="form-control">
-									</div>
-								</div>
-
-								<div class="box max">
-									<div class="col-md-6">
-										<label for="pt-sal">Pretensão salarial</label>
-										<input type="text" name="pt-sal" id="pt-sal" class="form-control">
-									</div>
-								</div>
-								</fieldset>
-								<fieldset>	
-								<div class="box max">
-								<h4><span class="alt">Idiomas</span></h4>
-									<div class="col-md-9">
-										<div class="box max col-md-12">
-											<span class="alt">Inglês:</span>
-											<label for="">Não Possuo</label>
-											<input type="radio" name="ingles" >
-											<label for="">Básico</label>
-											<input type="radio" name="ingles" >
-											<label for="">Intermediário</label>
-											<input type="radio" name="ingles" >
-											<label for="">Avançado</label>
-											<input type="radio" name="ingles" >
-										</div>
-										<div class="box max col-md-12">
-											<span class="alt">Espanhol:</span>
-											<label for="">Não Possuo</label>
-											<input type="radio" name="espanhol" >
-											<label for="">Básico</label>
-											<input type="radio" name="espanhol" >
-											<label for="">Intermediário</label>
-											<input type="radio" name="espanhol" >
-											<label for="">Avançado</label>
-											<input type="radio" name="espanhol" >
-										</div>
-									</div>
-									<div class="col-md-3">
-										<label for="o-idioma">Outros Idiomas</label>
-										<input type="text" name="o-idioma" id="o-idioma" class="form-control">
-									</div>
-								</div>
-								</fieldset>
-
-								<fieldset>
-								<div class="box max">
-									<div class="col-md-3">
-										<h4><span class="alt">Currículo</span></h4>
-									</div>
-									<div class="col-md-9">
-										<input type="text" name="curriculo" id="curriculo" class="form-control" placeholder="Envie seu Curriculo">
-										<button type="button" class="btn field-btn carregar-btn">Carregar</button>
-									</div>
-								</div>
-								</fieldset>
-								<fieldset>	
-								<h4><span class="alt"><b>Informações</b> de acesso</span></h4>
-								<div class="box max">
-									<div class="col-md-4">
-										<label for="i-email">E-mail</label>
-										<input type="text" id="i-email" name="i-email" class="form-control">
-									</div>
-									<div class="col-md-4">
-										<label for="i-senha">Senha</label>
-										<input type="text" id="i-senha" name="i-senha" class="form-control">
-									</div>
-									<div class="col-md-4">
-										<label for="i-confirm">Confirmar Senha</label>
-										<input type="text" id="i-confirm" name="i-confirm" class="form-control">
-									</div>
-								</div>
-								</fieldset>
-								<button type="button" class="btn box bg-dark-blue submit-btn col-md-3">realizar cadastro</button>
-							</form>
+						<div class="box">
+							<div class="title">
+								<h4>Sobre a empresa</h4>
+							</div>
+							<div class="content">
+								<ul>
+									<li>KBR LTDA</li>
+									<li>Comercial@gmail.com</li>
+									<li>Santos SP</li>
+								</ul>
+							</div>
+						</div>
 						
+						<div class="box">
+							<div class="title">
+								<h4>Sobre a vaga</h4>
+							</div>
+							<div class="content">
+								<b class="sub-title">Descição da vaga</b>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ullam totam rerum quam sint blanditiis qui, deleniti hic dolor harum?</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa doloremque, odio atque in, natus velit dolores at aliquid deleniti! Quisquam minima mollitia, dolorem sint adipisci commodi enim animi minus. Soluta.</p>
+
+								<ul>
+									<li class="metade"><span class="alt">Especialidade:</span> Direito</li>
+									<li class="metade"><span class="alt">Especialidade:</span> Direito</li>
+									<li class="metade"><span class="alt">Especialidade:</span> Direito</li>
+									<li class="metade"><span class="alt">Especialidade:</span> Direito</li>
+									<li class="metade"><span class="alt">Especialidade:</span> Direito</li>
+									<li class="metade"><span class="alt">Especialidade:</span> Direito</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+
+						<div class="box  btn-box">
+							<div class="content">	
+								<a href="#0" class="btn box bg-dark-blue">Acessar área restrita</a>
+								<p class="alt-2 text-center">Esqueceu sua senha?</p>
+							</div>
+						</div>
+
+						<div class="box">
+							<div class="title">
+								<h3><span class="alt-2">Resumo da Vaga</span></h3>
+							</div>
+							<div class="content">
+								<ul>
+									<li>
+										<span class="alt">Empresa</span><br>
+										Dal Empreendimentos Imobiliarios Ltda
+									</li>
+									<li>
+										<span class="alt">Título da vaga</span><br>
+										Auxiliar Administrativo
+									</li>
+									<li>
+										<span class="alt">Jornada</span><br>
+										Integral
+									</li>
+									<li>
+										<span class="alt">Salário</span><br>
+										R$ 123123 a R$ 1231231
+									</li>
+									<li>
+										<span class="alt">Localidade</span><br>
+										Bauru Sp
+									</li>
+									<li>
+										<span class="alt">Nº de Vagas</span><br>
+										01
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="box">
+							<div class="content">
+								<a href="#0" class="btn box bg-dark-blue"><i class="fa fa-print"></i> Imprimir vagas</a>
+								<p class="text-center"><span class="alt">Compartilhe nas redes sociais</span></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-8">
+						<div class="outras-vagas">
+							<div class="title">
+								<h2>Outras vagas</h2>
+							</div>
+							<div class="content">
+								<div class="col-md-4">
+									<a href="#0">
+										05/09/2017 <br>
+										<span class="alt">Consulto de Negócios</span><br>
+										Tupã - sp
+									</a>
+								</div>
+								<div class="col-md-4">
+									<a href="#0">
+										05/09/2017 <br>
+										<span class="alt">Consulto de Negócios</span><br>
+										Tupã - sp
+									</a>
+								</div>
+								<div class="col-md-4">
+									<a href="#0">
+										05/09/2017 <br>
+										<span class="alt">Consulto de Negócios</span><br>
+										Tupã - sp
+									</a>
+								</div>
+							</div>
+							<a href="#0" class="btn box bg-dark-blue">Ver Mais Vagas</a>
 						</div>
 					</div>
 				</div>
@@ -359,7 +297,7 @@
 							</div>
 						</div>
 
-						<div class="col-md-2 box "	>
+						<div class="col-md-2 box ">
 							<div class="title">
 								Fale Conosco
 							</div>

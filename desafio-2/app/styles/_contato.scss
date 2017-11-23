@@ -1,0 +1,64 @@
+#contato{
+	.form-control{
+		border-radius: 0;
+		margin-bottom: 15px;
+		&:active,&:focus{
+			box-shadow: none;
+			border: 1px solid $dark-red;
+		}
+	}
+	form{
+		.btn.box{
+			width: 220px;
+			height: 60px;
+			font-weight: bolder;
+			font-size: 20px;
+			&:hover{
+				background-color: lighten($dark-blue,20%);
+			}
+		}
+	}
+	.mensagem-log{
+		margin-top:30px;
+		width: 450px;
+		.mensagem-s{
+			color: $dark-blue;
+			background-color: lighten($dark-blue,64%);
+			padding: 15px 25px;
+		}
+		.mensagem-e{
+			color: $dark-red;
+			background-color: lighten($dark-red,52%);
+			width: 450px;
+			padding: 15px 25px;
+		}
+		b{
+			margin-right: 25px;
+		}	
+	}
+	h3{
+		color: $dark-blue;
+		margin: 0 0 15px;
+		i.fa{
+			margin-right: 20px;
+			font-size: 12px;
+		}
+	}
+	.dados-mapa{
+		margin-top: 35px;
+		.title{
+			font-weight: bolder;
+			font-size: 18px;
+			i.fa{
+				font-size: 26px;
+				display: inline-block;
+				vertical-align: bottom;
+			}
+		}
+		.content{
+			margin-top: 5px;
+			padding-left: 20px;
+		}
+	}
+
+}
