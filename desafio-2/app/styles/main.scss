@@ -43,6 +43,9 @@ $black : #000;
 @import "links-uteis";
 @import "vagas";
 @import "noticias";
+@import "login";
+@import "novos-cadastros";
+@import "admin";
 
 *{
 	@extend .fast-e;
@@ -65,7 +68,7 @@ body{
   color: $grey-1;
   font-size: 14px;
   @extend .font-1;
-  padding-bottom: 200px;//Retirar
+  
 }
 
 .left{
@@ -218,16 +221,18 @@ span.alt-2{
 		li{
 			display: inline-block;
 			margin: 0 5px; 
-			i.fa{
+			span.fa{
 				color: $dark-blue;
-				margin: 0 10px;
+				margin: 0 4px;
 				font-size: 8px;
 				display: inline-block;
 				vertical-align: middle;
 			}
-			i.fa.min{
+			span.fa.min{
 				font-size: 4px;
-				margin: -4px;
+			}
+			span.text{
+				display: inline-block;
 			}
 			a:link,a:visited{
 					color: $black;
@@ -241,6 +246,11 @@ span.alt-2{
 				}
 				a:hover{
 					border: 2px solid $dark-red;
+				}
+			}
+			@media screen and (max-width: 767px) {
+				span.text{
+					display: none;
 				}
 			}
 		}
@@ -431,6 +441,33 @@ ul.lista-l-r{
 		}
 	}
 }
+
+.img{
+	position: relative;
+	.mask{
+		border-radius: 10px;
+	}
+	&:hover .mask{
+		width: 100%;
+		height: 100%;
+		z-index: 4;
+		background: rgba(0,0,0,0.6);
+		background-blend-mode: multiply;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	img{
+		height: auto;
+		width: 100%;
+		border-radius: 10px;
+
+	}
+	.btn{
+		z-index: 5;
+	}
+}
+
 // Colocar um buttao dentro do field
 .field-btn{
 	padding: 4px 6px;

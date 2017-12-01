@@ -46,7 +46,7 @@
 				left: 50%;
 				transform: translateX(-50%);
 				@media screen and (max-width: 767px) {
-					opacity: 0.5;
+					position: relative;
 				}
 			}
 			.title{
@@ -54,6 +54,9 @@
 				font-size: 22px;
 				text-transform: capitalize;
 				@extend .font-1;
+				@media screen and (max-width: 767px) {
+					margin-top: 60px;
+				}
 			}
 			.content p{
 				@extend .font-1;

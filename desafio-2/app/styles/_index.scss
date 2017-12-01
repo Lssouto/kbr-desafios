@@ -198,66 +198,36 @@
 				color: $dark-red;
 			}
 			overflow: hidden;
-			&:before{
-				content: "";
-				height: 150px;
-				width: 150px;
-				top: -50%;
-				right: -10%;
-				position: absolute;
-				display: inline-block;
-				background: $dark-red;
-				transform: rotate(45deg);
-				animation-name: fill;
-				animation-duration: 0.5s;
-				animation-fill-mode: forwards;
-				@keyframes fill{
-					from{
-						height: 0px;
-					}
-					to{
-						height: 150px;
+			@media screen and (min-width: 992px) {
+				
+				&:before{
+					content: "";
+					height: 150px;
+					width: 150px;
+					top: -50%;
+					right: -10%;
+					position: absolute;
+					display: inline-block;
+					background: $dark-red;
+					transform: rotate(45deg);
+					animation-name: fill;
+					animation-duration: 0.5s;
+					animation-fill-mode: forwards;
+					@keyframes fill{
+						from{
+							height: 0px;
+						}
+						to{
+							height: 150px;
+						}
 					}
 				}
+
 			}
 
 
 		}
-		// &:hover{
-
-		// 	overflow: hidden;
-		// 	span.date{
-		// 		border-color: $white;
-		// 	}
-		// 	.content-text{
-		// 		z-index:2;
-		// 	}
-		// 	p{
-		// 		color: $dark-red;
-		// 	}
-		// 	&:before{
-		// 		content: "";
-		// 		position: absolute;
-		// 		background: $dark-red;
-		// 		top: 50%;
-		// 		height: 100%;
-		// 		transform: translateY(-50%);
-		// 		display: inline-block;
-		// 		animation-name: fill;
-		// 		animation-duration: 1.5s;
-		// 		animation-fill-mode: forwards;
-		// 		z-index: 0;
-
-		// 		@keyframes fill{
-		// 			from{
-		// 				width: 0px;
-		// 			}
-		// 			to{
-		// 				width: 100%;
-		// 			}
-		// 		}
-		// 	}
-		// }
+		
 	}
 	.palavra-presidente{
 		height: inherit;
@@ -426,12 +396,18 @@
 }
 
 #eventos-realizados{
-	img{
-		margin-top: 20px;
-		height: 315px;
-		width:100%;
-		border-radius: 4px;
-		position: relative;
+	.item-evento{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.img{
+		margin: 15px;
+			img{
+			height: 315px;
+			width:100%;
+			border-radius: 8px;
+			position: relative;
+		}
 	}
 	p{
 		font-weight: bolder;

@@ -1,0 +1,158 @@
+$admin-black: #424242;
+
+#admin-header{
+	background: $admin-black url('../images/admin-header-bg.png') right center no-repeat;
+  	background-blend-mode: multiply;
+  	padding: 20px 15px;
+	img{
+		margin-top:5px;
+		width: 100%;
+		height: auto;
+	}
+	color: $white;
+	a:link,a:visited{
+		color: $white;
+		font-size: 20px;
+	}
+	.config{
+		padding: 30px 0;
+	}
+}
+#admin-breadcumbs{
+	color: $dark-blue;
+	padding:15px;
+	background: $grey-2;	
+	.container{	
+		overflow-x:hidden;
+	}
+
+	ul{	
+		padding: 0;
+		list-style: none;
+		&:before{
+			content: "Você está em";
+		}
+	}
+	li{
+		display: inline-block;
+		&:before{
+			content: "\f105 ";
+			font-family: FontAwesome;
+			margin-right: 12px;
+			margin-left: 12px;
+			color: $dark-blue;
+			font-weight: bolder;
+		}
+		&:last-child{
+			color: $dark-red;
+			&:before{
+				content: "\f105 ";
+				color: $dark-red;
+			}
+		}
+	}
+}
+#admin-nav{
+	background: $grey-2;
+	position: absolute;
+	left: 0;
+	input[type="checkbox"]{
+		display: none;
+	}
+	li{
+
+		background: $dark-red;
+		color: $white;
+			
+		label{
+			width: 100%;
+			padding-left: 45px;
+			height: 55px;
+			line-height: 53px;
+			font-weight: bolder;
+			position: relative;
+		}
+
+		a:link,a:visited{
+			height: 55px;
+			line-height: 53px;
+			color: $white;
+			font-weight: bolder;
+			padding-left: 45px;
+			padding-right: 100px;
+			width: 100%;
+			cursor: pointer;
+			position: relative;
+		}
+
+		a:before,label:before{
+			content: "\f105";
+			font-family: FontAwesome;
+			color: $white;
+			display: inline-block;
+			left: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+			position: absolute;
+			font-weight: bolder;
+		}
+
+		input[type="checkbox"] + label + ul{
+			display: none;
+		}
+		input[type="checkbox"]:checked + label + ul{
+			display: block;
+		}
+		input[type="checkbox"]:checked + label:before{
+			content: "\f107";
+			font-family: FontAwesome;
+		}
+
+		ul{
+			padding-top:20px;
+			padding-bottom: 20px;
+			padding-left: 25px;	
+			background-color: darken($dark-red,10%);
+			li{
+				background-color: darken($dark-red,10%);
+			}
+			label{
+				width: 100%;
+				padding-left: 45px;
+				height: 25px;
+				line-height: 53px;
+				font-weight: bolder;
+			}
+
+			a,a:link,a:visited{
+				height: 25px;
+				line-height: 25px;
+				color: $white;
+				font-weight: bolder;
+				padding-left: 45px;
+				width: 100%;
+				cursor: pointer;
+			}
+			
+		}
+	}	
+}
+#admin-rodape{
+	background: $dark-blue;
+	color: $white;
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	img{
+		display:inline-block;
+		vertical-align: top;
+		opacity: 0.6;
+	}
+	.text-oab{
+		display: inline-block;
+	}
+	p{
+		margin-top: 20px;
+	}
+}

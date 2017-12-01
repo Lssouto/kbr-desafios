@@ -1,0 +1,58 @@
+#login{
+	.title-header{
+		color: $dark-red;
+	}
+	.content-container{
+		background-color: $grey-2;
+		padding: 25px 0;
+	}
+	.box{
+		margin:15px 0;
+		.input-container{
+			display: block;
+		}
+		h3{
+			color: $dark-red;
+		}
+		p{
+			padding: 0 15px;
+		}
+		p.forgot{
+			text-align: center;
+			font-size: 12px;
+		}
+		form{
+			margin-top: 25px;
+			margin-bottom: 10px
+		}
+		.btn{
+			margin: 0;
+		}
+		.form-control{
+			height: 40px;
+			margin-bottom: 10px;
+			border: 0px;
+			box-shadow:none;
+			border-radius: 0;
+		}
+		label{
+			color: $dark-red;
+			display: inline-block;
+			vertical-align: middle;
+			
+		}
+		button{
+			height: 55px;
+			font-weight: bolder;
+			text-transform: uppercase;
+		}
+		input[type="radio"]{
+			margin: 25px 20px 25px 5px;
+			display: inline-block;
+		}
+		.box{
+			margin-bottom: 15px;
+		}
+
+	}
+}

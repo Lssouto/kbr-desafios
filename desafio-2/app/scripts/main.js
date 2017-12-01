@@ -41,14 +41,24 @@ $(document).ready(function(){
 		//Posicao atual do Scroll
 		var scroll = $(window).scrollTop();
 	   //Exibe se logne do bottom ou do top
-	    if (scroll > 100 ) {
+	    if (scroll > 200 ) {
 	    	$("#header").addClass("scroll");
-				    	
 	    }
 	    //Caso contrario ele esconde o scroll-nav
 	    else{
-	   		$("#header").removeClass("scroll");
+   		$("#header").removeClass("scroll");
 	    }
+	});
+	var curriculo = function(){
+		$('#curriculo-file')[0].click();
+		$('#currculo').val($('#curriculo-file').val());
+
+	};
+	$("#curriculo").on('click',function(){
+		curriculo();
+	});
+	$("#btn-curriculo").on('click',function(){
+		curriculo();
 	});
 });
 
