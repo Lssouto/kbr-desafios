@@ -20,7 +20,7 @@ $admin-black: #424242;
 }
 #admin-breadcumbs{
 	color: $dark-blue;
-	padding:15px;
+	padding:15px 30px;
 	background: $grey-2;	
 	.container{	
 		overflow-x:hidden;
@@ -53,9 +53,10 @@ $admin-black: #424242;
 	}
 }
 #admin-nav{
+	@media screen and (min-width: 992px) {
+		min-height: 680px;
+	}
 	background: $grey-2;
-	position: absolute;
-	left: 0;
 	input[type="checkbox"]{
 		display: none;
 	}
@@ -141,8 +142,6 @@ $admin-black: #424242;
 	background: $dark-blue;
 	color: $white;
 	padding: 10px;
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 	img{
 		display:inline-block;
@@ -154,5 +153,45 @@ $admin-black: #424242;
 	}
 	p{
 		margin-top: 20px;
+	}
+}
+#admin-content{
+	padding: 25px;
+	h2{
+		margin-top: 25px;
+		margin-bottom: 45px;
+
+	}
+	table{
+		width: 100%;
+		tr{
+			border: 10px solid $white;
+		}
+		td{
+			&:nth-child(2){
+				padding: 15px 15px 15px 45px;
+				background: darken($grey-2,5%);
+			}
+			&:nth-child(1),&:nth-child(3){
+				padding: 15px 15px 15px 45px;
+				background: $grey-2;
+			}
+			span.fa{
+				display: inline-block;
+				margin-left: -4px;
+			}
+			span.fa-search{
+				background-color: lighten($black,25%);
+				color: $grey-2;
+				padding: 17px;
+				font-size: 20px;
+			}
+			span.fa-close{
+				background-color: $dark-red;
+				color: $grey-2;
+				padding: 17px;
+				font-size: 20px;
+			}
+		}
 	}
 }

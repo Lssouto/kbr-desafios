@@ -28,7 +28,7 @@
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 		
-		<section id="admin-header">
+		<section id="admin-header" class="col-md-12">
 			<div class="row">
 				<div class="col-md-2">	
 					<img src="images/logo-oab-praiagrande.svg" alt="">
@@ -41,106 +41,140 @@
 				</div>
 			</div>
 		</section>
-		<div class="row m-0">	
-			<section id="admin-nav" class="col-md-2 p-0">
-				<ul>
-					<li>
-					  <input type="checkbox" name="nav" id="nav-1">
-					  <label for="nav-1">Meus dados</label>
-					  <ul>
-					    <li><a href="#0">Cadastrar</a></li>
-					    <li><a href="#0">Gerenciar</a></li>
-					  </ul>
-					</li>
+		
+		<section id="admin-nav" class="col-md-2 p-0">
+			<ul>
+				<li>
+				  <input type="checkbox" name="nav" id="nav-1">
+				  <label for="nav-1">Meus dados</label>
+				  <ul>
+				    <li><a href="#0">Cadastrar</a></li>
+				    <li><a href="#0">Gerenciar</a></li>
+				  </ul>
+				</li>
 
-					<li>
-			    		<input type="checkbox" name="nav" id="nav-2">
-					  	<label for="nav-2">Vagas</label>
-					  	<ul>
-					  	  <li><a href="#0">Cadastrar</a></li>
-					  	  <li><a href="#0">Gerenciar</a></li>
-					  	</ul>
-					</li>
-					<li>
-					   <input type="checkbox" name="nav" id="nav-3">
-					   <label for="nav-3">Meus dados</label>
-					   <ul>
-				     		<li><a href="#0">Cadastrar</a></li>
-					     	<li><a href="#0">Gerenciar</a></li>
-					   </ul>
-					</li>
-					<li><a href="#0">Sair</a></li>
-				</ul>
-			</section>
+				<li>
+		    		<input type="checkbox" name="nav" id="nav-2">
+				  	<label for="nav-2">Vagas</label>
+				  	<ul>
+				  	  <li><a href="#0">Cadastrar</a></li>
+				  	  <li><a href="#0">Gerenciar</a></li>
+				  	</ul>
+				</li>
+				<li>
+				   <input type="checkbox" name="nav" id="nav-3">
+				   <label for="nav-3">Meus dados</label>
+				   <ul>
+			     		<li><a href="#0">Cadastrar</a></li>
+				     	<li><a href="#0">Gerenciar</a></li>
+				   </ul>
+				</li>
+				<li><a href="#0">Sair</a></li>
+			</ul>
+		</section>
 
-			<section class="col-md-10 p-0">
-				<div id="admin-breadcumbs">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<ul>
-									<li>Home</li>
-									<li>Convênio</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="#admin-content">
-					<div class="col-md-12 title-header">Gerenciar Vagas</div>
-					<table class="table table-striped table-hover">
-						<thead>
-							<tr>
-								<th class="col-md-2">Data</th>
-								<th class="col-md-4">Vaga</th>
-								<th class="col-md-4">Especialidade</th>
-								<th class="col-md-1"></th>
-								<th class="col-md-1"></th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>2</td>
-								<td>3</td>
-								<td>btn</td>
-								<td>btn</td>
-							</tr>
-						</tbody>
-					</table>
-
-					<div class="row text-center paginacao-btm">	
-
+		<section class="col-md-10 p-0">
+			<div id="admin-breadcumbs">
+				<div class="row">
+					<div class="col-md-12">
 						<ul>
-							<li><a href="#0">
-									<span class="fa fa-play fa-rotate-180 min"></span>
-									<span class="fa fa-play fa-rotate-180"></span>
-									<span class="text">Anterior</span></a></li>
-							<li><a href="#0">1</a></li>
-							<li><a href="#0">2</a></li>
-							<li><a href="#0">3</a></li>
-							<li><a href="#0">
-									<span class="text">Próximo</span>
-									<span class="fa fa-play"></span>
-									<span class="fa fa-play min"></span>
-								</a></li>
+							<li>Home</li>
+							<li>Convênio</li>
 						</ul>
-
 					</div>
 				</div>
-			</section>
-		</div>
-		<section id="admin-rodape">
-			<div class="row">	
-				<div class="col-md-3 logo-oab-footer box ">
-					<img src="images/logo-OAB-footer.png" alt="" >
-					<div class="text-oab">123ª SUBSEÇÃO <br> <b>PRAIA GRANDE</b>	</div>
-				 	
-				</div>
+			</div>
+			<div id="admin-content">
+				<h2>Gerenciar Vagas</h2>
+				<table class="table-responsive">
+					<thead>
+						<tr>
+							<th class="col-md-2">Data</th>
+							<th class="col-md-4">Vaga</th>
+							<th class="col-md-3">Especialidade</th>
+							<th class="col-md-2"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>08/12/2017</td>
+							<td>Auxiliar Administrativo</td>
+							<td>Especialidade</td>
+							<td>
+								<span class="fa fa-search"></span>
+								<span class="fa fa-close"></span>
+							</td>
+						</tr>
+						<tr>
+							<td>08/12/2017</td>
+							<td>Auxiliar Administrativo</td>
+							<td>Especialidade</td>
+							<td>
+								<span class="fa fa-search"></span>
+								<span class="fa fa-close"></span>
+							</td>
+						</tr>
+						<tr>
+							<td>08/12/2017</td>
+							<td>Auxiliar Administrativo</td>
+							<td>Especialidade</td>
+							<td>
+								<span class="fa fa-search"></span>
+								<span class="fa fa-close"></span>
+							</td>
+						</tr>
+						<tr>
+							<td>08/12/2017</td>
+							<td>Auxiliar Administrativo</td>
+							<td>Especialidade</td>
+							<td>
+								<span class="fa fa-search"></span>
+								<span class="fa fa-close"></span>
+							</td>
+						</tr>
+						<tr>
+							<td>08/12/2017</td>
+							<td>Auxiliar Administrativo</td>
+							<td>Especialidade</td>
+							<td>
+								<span class="fa fa-search"></span>
+								<span class="fa fa-close"></span>
+							</td>
+						</tr>
 
-				<div class="col-md-9">
-					<p class="text-left">Este site é Subseção de Praia Grande. Os textos aqui publicados não representam necessariamente a opnião da Secional de São Paulo.</p>
+					</tbody>
+				</table>
+
+				<div class="row text-center paginacao-btm">	
+
+					<ul>
+						<li><a href="#0">
+								<span class="fa fa-play fa-rotate-180 min"></span>
+								<span class="fa fa-play fa-rotate-180"></span>
+								<span class="text">Anterior</span></a></li>
+						<li><a href="#0">1</a></li>
+						<li><a href="#0">2</a></li>
+						<li><a href="#0">3</a></li>
+						<li><a href="#0">
+								<span class="text">Próximo</span>
+								<span class="fa fa-play"></span>
+								<span class="fa fa-play min"></span>
+							</a></li>
+					</ul>
+
 				</div>
+			</div>
+		</section>
+		
+		<section id="admin-rodape" class="col-md-12">
+			<div class="col-md-3 logo-oab-footer box ">
+				<img src="images/logo-OAB-footer.png" alt="" >
+				<div class="text-oab">123ª SUBSEÇÃO <br> <b>PRAIA GRANDE</b>	</div>
+			 	
+			</div>
+
+			<div class="col-md-9">
+				<p class="text-left">Este site é Subseção de Praia Grande. Os textos aqui publicados não representam necessariamente a opnião da Secional de São Paulo.</p>
 			</div>
 		</section>
 

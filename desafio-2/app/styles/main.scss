@@ -92,6 +92,10 @@ span.alt-2{
 .semi-circle{
 	border-radius: 40px;
 }
+.input-container{
+	width: 100%;
+	display: inline-block;
+}
 .title-header{
 	@extend .font-1;
 	margin: 40px 0;
